@@ -17,15 +17,15 @@ public class Main {
     }
 
     static String calc(String input) {
-        String[] parts = input.split(" ");
-        if (parts.length != 3) {
+        String[] args = input.split(" ");
+        if (args.length != 3) {
             return "throws Exception";
         }
 
         try {
-            int num1 = Integer.parseInt(parts[0]);
-            String operator = parts[1];
-            int num2 = Integer.parseInt(parts[2]);
+            int num1 = Integer.parseInt(args[0]);
+            String operator = args[1];
+            int num2 = Integer.parseInt(args[2]);
 
             switch (operator) {
                 case "+":
