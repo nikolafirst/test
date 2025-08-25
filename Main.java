@@ -26,6 +26,11 @@ public class Main {
             int num1 = Integer.parseInt(args[0]);
             String operator = args[1];
             int num2 = Integer.parseInt(args[2]);
+            
+            // Добавлено ограничение, теперь калькулятор принимает на вход числа от 0 до 10 
+            if ((10 < num1 || num1 < 0) || (10 < num2 || num2 < 0)) {
+                return "throws Exception";
+            }
 
             switch (operator) {
                 case "+":
